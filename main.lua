@@ -1,9 +1,11 @@
 function love.load()
   Object = require "classic"
+  require "shape"
   require "rectangle"
+  require "circle"
   
   r1 = Rectangle(100, 100, 200, 50)
-  r2 = Rectangle(180, 300, 25, 140)
+  r2 = Circle(180, 300, 50)
 end
 
 function love.update(dt)
